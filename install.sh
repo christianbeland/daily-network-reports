@@ -2,6 +2,9 @@
 
 TO_MAIL=$1
 
+debconf-set-selections <<< "postfix postfix/mailname string christianbeland.com"
+debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
+
 sudo apt-get update
 sudo apt-get install -y logwatch vnstat mailutils
 
