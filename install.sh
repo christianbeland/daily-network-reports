@@ -11,6 +11,8 @@ sudo apt-get install -y logwatch vnstat mailutils
 # making sure script is executable
 sudo chmod +x daily-network-report.sh
 
+sudo ln -s $PWD/daily-network-report.sh /usr/local/bin/daily-network-report.sh
+
 # Create cron job file to schedule reporting
 echo "00 11 * * * daily-network-report.sh ${TO_MAIL}" > daily.cron
 
