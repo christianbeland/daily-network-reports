@@ -1,6 +1,8 @@
 # daily-network-reports
 
-This script will produce daily report of network usages (among other things) and send them to the specified email address. This script was tested on ubuntu 14.04.
+Produces daily report of network usages (among other things) and send them to the specified email address. 
+
+This script was tested on ubuntu 14.04.
  
 ## Install daily reporting 
 
