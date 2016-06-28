@@ -18,4 +18,4 @@ echo 'Scheduling daily reports cron job'
 crontab daily.cron
 
 echo 'Producing initial reports'
-./daily-network-reports.sh $TO_MAIL
+./daily-network-report.sh $TO_MAIL
